@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 i {
     cursor: pointer;
 }
@@ -53,7 +57,7 @@ header {
     z-index: 99;
     width: 2rem;
     height: 2rem;
-    margin: 1em;
+    margin: 1em 0.5em;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -116,6 +120,59 @@ header.active .bar::after {
     font-size: 1rem;
 }
 
+.chats-container {
+    padding: 1rem;
+    overflow-y: scroll;
+    max-height: 50vh;
+}
+
+.chats-container::-webkit-scrollbar {
+    display: none;
+}
+
+.chats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.chat-texts {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 92.5%;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.chat-texts p {
+    font-size: 0.6rem;
+}
+
+.chat-texts span {
+    font-weight: bold;
+}
+
+.left-texts {
+    text-align: left;
+}
+
+.right-texts {
+    text-align: right;
+}
+
+.chat-image {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 4rem;
+    height: 4rem;
+}
+
+.chat-image img {
+    border-radius: 50%;
+}
+
+
+/* Footer area starts */
+
 .features {
     color: white;
     padding: 2.5rem;
@@ -159,4 +216,18 @@ header.active .bar::after {
     .features i {
         font-size: 1.25rem;
     }
+
+    .chat-image {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .chat-texts p {
+        font-size: 0.6rem;
+    }
+
+    .chat-texts {
+        width: 82%;
+    }
+
 }
