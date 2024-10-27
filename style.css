@@ -1,0 +1,152 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i {
+    cursor: pointer;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+body {
+    background-color: #16265c;
+    color: white;
+    /* background-color: #0c1a42; */
+    /* background: url(/images/Colour\ Theme.jpeg) no-repeat center center/cover; */
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    z-index: 20;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+    width: 100vw;
+    height: 4rem;
+}
+
+.nav-profile i {
+    font-size: 2rem;
+}
+
+.nav-logo h1 {
+    font-size: 2rem;
+}
+
+.hamburger-menu {
+    position: relative;
+    z-index: 99;
+    width: 2rem;
+    height: 2rem;
+    margin: 1em;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    transition: all 0.5s ease 0s;
+}
+
+.bar::before,
+.bar::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    transition: all 0.5s ease 0s;
+}
+
+.bar::before {
+    transform: translateY(-8px);
+}
+
+.bar::after {
+    transform: translateY(8px);
+}
+
+header.active .hamburger-menu .bar {
+    background-color: transparent;
+}
+
+header.active .bar::before {
+    transform: translateY(0px) rotate(-45deg);
+}
+
+header.active .bar::after {
+    transform: translateY(0px) rotate(45deg);
+}
+
+.search-bar {
+    display: block;
+    width: 98vw;
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+}
+
+.features {
+    color: white;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    position: fixed;
+    width: 85vw;
+    margin: 0 auto;
+    height: 3.5rem;
+    bottom: 1.5rem;
+    left: 1rem;
+    right: 1rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features>div {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0.75rem;
+    border-radius: 1rem;
+    transition: all 0.7s ease;
+    transform: scale(1) rotate(0);
+}
+
+.features>div:hover {
+    transform: scale(1.2) rotate(360deg);
+    color: #16265c;
+    cursor: pointer;
+}
+
+.features i {
+    font-size: 2rem;
+}
