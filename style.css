@@ -150,3 +150,13 @@ header.active .bar::after {
 .features i {
     font-size: 2rem;
 }
+
+@media (max-width:450px) {
+    .search-bar {
+        width: 95vw;
+    }
+
+    .features i {
+        font-size: 1.25rem;
+    }
+}
