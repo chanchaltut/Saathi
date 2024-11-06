@@ -24,8 +24,6 @@ button:focus {
 body {
     background-color: #16265c;
     color: white;
-    /* background-color: #0c1a42; */
-    /* background: url(/images/Colour\ Theme.jpeg) no-repeat center center/cover; */
     height: 100vh;
     font-family: sans-serif;
 }
@@ -105,7 +103,7 @@ header.active .bar::after {
 
 .search-bar {
     display: block;
-    width: 98vw;
+    width: 97.5vw;
     border-radius: 1rem;
     margin: 0 auto;
     padding: 0.5rem;
@@ -175,7 +173,7 @@ header.active .bar::after {
 
 .features {
     color: white;
-    padding: 2.5rem;
+    padding: 2.5rem 1rem;
     border-radius: 1rem;
     position: fixed;
     width: 85vw;
